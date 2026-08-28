@@ -1,0 +1,140 @@
+:root{
+    --primary-color: #4caf50;
+    --secondary-color: #8bc34a;
+    --accent-color: #FFC107;
+    --text-color: #333333;
+    --light-text-color: #f0f0f0;
+    --bg-light:#f9f9f9;
+    --bg-dark:#2e7d32;
+    --font-heading: 'Montserrat','sans-serif';
+    --font-body: 'Open Sans','sans-serif';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #ffffff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul{
+    list-style: none;
+}
+
+.btn-cta{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover{
+    background-color: var(--secondary-color);
+}
+
+.btn-cta.primary{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.btn-cta.primary:hover{
+    background-color: #e0b000;
+}
+
+.header{
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo a{
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.header .nav ul{
+    display: flex;
+}
+
+.header .nav ul li{
+    margin-left: 30px;
+}
+
+.header .nav ul li a{
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover{
+    color: var(--primary-color);
+}
+
+
+! colocar o codigo aqui faltando
+
+.features{
+    padding: 80px 0;
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.features h2{
+    font-family: var(--font-heading);
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: var(--primary-color);
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card{
+    background-color: #ffffff;
+    padding: 40px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
