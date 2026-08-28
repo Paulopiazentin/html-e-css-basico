@@ -138,3 +138,22 @@ ul{
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
+.feature-card i{
+    font-size: 50px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-card h3{
+    font-family: var(--font-heading);
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.feature-card p{
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
